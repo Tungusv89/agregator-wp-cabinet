@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/select2.min.css" rel="stylesheet" />
+
+	<link rel="stylesheet" href="css/main.css">
+	<title>Редактирование карточки</title>
+</head>
+
+<body>
+	<div class="content">
+		<div class="container">
+			<div class="content_body">
+				<div class="sitebar">
+					<div class="user_info">
+						<div class="foto">
+							<!-- <input type="file" name="" id=""> -->
+							<div class="img">
+								<img src="img/user.jpg" alt="">
+							</div>
+							<div class="replace_avatar">
+								<div class="title">Изменить аватар <div class="close_replace_avatar">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12Z"
+												fill="#A7A3A3"></path>
+										</svg>
+									</div>
+								</div>
+								<ul>
+
+									<li>
+										<a data-user-id="36" data-image="char" class="select-image-type" href="#">
+											<span class="first_letter">t</span>
+											<span class="text">Инициалы (без аватара)</span>
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd"
+													d="M20.692 6.27814C21.0907 6.66034 21.1041 7.29336 20.7219 7.69204L10.1764 18.692C9.98755 18.889 9.72638 19.0003 9.45347 19C9.18056 18.9997 8.91963 18.8879 8.73119 18.6905L3.27665 12.9762C2.89531 12.5767 2.91003 11.9437 3.30953 11.5624C3.70902 11.181 4.34202 11.1957 4.72336 11.5952L9.45611 16.5534L19.2781 6.30797C19.6603 5.90929 20.2934 5.89594 20.692 6.27814Z"
+													fill="#208DD7"></path>
+											</svg>
+										</a>
+									</li>
+									<li><a class="load-photo" href="#">
+											<span class="svg">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<g clip-path="url(#clip0)">
+														<path
+															d="M13.69 7.52355C13.9662 7.04526 14.5778 6.88138 15.0561 7.15752C15.5344 7.43366 15.6982 8.04526 15.4221 8.52355L11.1229 15.97C10.4978 17.0526 9.34834 17.7254 8.09838 17.7403C6.84148 17.7552 5.67593 17.0853 5.05616 15.9918C4.43171 14.8899 4.43707 13.5502 5.0655 12.4617L9.13964 5.40506C10.2301 3.51631 12.215 2.32079 14.3944 2.24003C16.5816 2.15898 18.6221 3.33709 19.6455 5.27176C20.6653 7.1996 20.6224 9.51631 19.5319 11.4051L15.4227 18.5224C14.7957 19.6085 13.8884 20.5061 12.7957 21.1216C10.6365 22.3376 8.58826 22.6566 6.70239 22.0205C6.17907 21.8439 5.89794 21.2766 6.07446 20.7533C6.25098 20.23 6.81831 19.9488 7.34163 20.1254C8.64319 20.5644 10.1169 20.3349 11.8142 19.3789C12.5947 18.9394 13.2428 18.2982 13.6907 17.5224L17.7999 10.4051C18.5463 9.11225 18.5757 7.5265 17.8776 6.20693C17.2132 4.95089 15.8885 4.18604 14.4685 4.23866C12.9767 4.29394 11.6181 5.11225 10.8717 6.40506L6.79755 13.4617C6.52353 13.9363 6.5212 14.5205 6.79141 14.9973C7.05659 15.4652 7.54639 15.7467 8.07458 15.7404C8.61856 15.7339 9.11882 15.4411 9.39082 14.97L13.69 7.52355Z"
+															fill="#4F4F4F"></path>
+													</g>
+													<defs>
+														<clipPath id="clip0">
+															<rect width="24" height="24" fill="white"></rect>
+														</clipPath>
+													</defs>
+												</svg>
+											</span>
+											<span class="text">Загрузить новое фото</span></a>
+										<input data-user-id="36" class="new-user-image" name="user_image"
+											style="display: none" type="file">
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="info">
+							<div class="name">Оксана Сизова</div>
+							<div class="nike_name">@ psychologist</div>
+						</div>
+					</div>
+
+					<div class="menu">
+						<ul>
+							<li class="active">
+								<a href="" class="account">Мой аккаунт</a>
+								<span class="toggle"></span>
+							</li>
+							<li>
+								<a href="" class="cards">Мои карточки</a>
+								<span class="toggle"></span>
+							</li>
+							<li>
+								<a href="" class="support">Поддержка</a>
+								<span class="toggle"></span>
+							</li>
+							<li>
+								<a href="" class="logout">Выйти</a>
+								<span class="toggle"></span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<form class="right_content">
+					<div class="block_item">
+						<div class="title">Сегмент</div>
+						<div class="field">
+							<select class="js-select" name="state">
+								<option value="AL">Кофейни</option>
+								<option value="WY">Кофейни2</option>
+							</select>
+							<div class="description">На агрегаторе есть несколько сегментов, и для каждого представлены
+								свои
+								категории. Чтобы продолжить заполнение карточки, выберите свой основной сегмент.</div>
+						</div>
+					</div>
+					<div class="block_item">
+						<div class="title">Основное</div>
+						<div class="field">
+							<label for="">Название</label>
+							<input type="text" name="" id="" placeholder="Skuratov Coffee - Кутузовский">
+						</div>
+
+						<div class="field">
+							<label for="">Логотип</label>
+							<div class="input_block">
+								<div class="preview"></div>
+								<div class="input_file">
+									<input type="file" name="" id="" accept=".jpg,.jpeg,.png,.svg">
+									<div class="status">Файл не выбран</div>
+									<div class="button">Загрузить новый файл</div>
+								</div>
+							</div>
+						</div>
+						<div class="field">
+							<label for="">Главное фото</label>
+							<div class="input_block">
+								<div class="preview"></div>
+								<div class="input_file">
+									<input type="file" name="" id="" accept=".jpg,.jpeg,.png,.svg">
+									<div class="status">Файл не выбран</div>
+									<div class="button">Загрузить новый файл</div>
+								</div>
+							</div>
+						</div>
+						<div class="field">
+							<label for="">Описание</label>
+							<textarea class="textarea" name="" id=""
+								placeholder="Большие окна отлично освещают помещение и придают особую атмосферу."></textarea>
+						</div>
+						<div class="field">
+							<label for="">Сайт</label>
+							<input type="text" name="" id="" placeholder="https://skuratovcoffee.ru/msk">
+						</div>
+						<div class="field">
+							<label for="">Адрес</label>
+							<input type="text" name="" id="" placeholder="Кутузовский просп., 36, стр. 39">
+						</div>
+						<div class="field">
+							<label for="">Телефон</label>
+							<input type="text" name="" id="" placeholder="+7 (909) 699-89-14">
+						</div>
+						<div class="field">
+							<label for="">Часы работы</label>
+							<input type="text" name="" id="" placeholder="Ежедневно 6:55–22:05">
+						</div>
+						<div class="field">
+							<label for="">Фото</label>
+							<div class="input_block multiple">
+								<div class="preview"></div>
+								<div class="input_file">
+									<input type="file" name="" id="" accept=".jpg,.jpeg,.png,.svg" multiple>
+									<div class="status">Файл не выбран</div>
+									<div class="button">Загрузить новый файл</div>
+								</div>
+							</div>
+						</div>
+						<div class="field">
+							<label for="">Удобства</label>
+							<!-- wp_editor() -->
+							<input type="text" name="" id="" placeholder="">
+						</div>
+					</div>
+					<div class="block_item">
+						<div class="title">Категории</div>
+						<div class="field">
+							<label for="">Округ</label>
+							<select class="js-select" name="state">
+								<option value="AL">ЦАО</option>
+								<option value="WY">ЦАО2</option>
+							</select>
+						</div>
+						<div class="field">
+							<label for="">Район</label>
+							<select class="js-select" name="state">
+								<option value="AL">Дорогомилово</option>
+								<option value="WY">Дорогомилово2</option>
+							</select>
+						</div>
+						<div class="field">
+							<label for="">Цель</label>
+							<select class="js-select multiple" name="states[]" multiple="multiple">
+								<option value="AL">деловая встреча</option>
+								<option value="WY">поработать одному</option>
+								<option value="opt3">неформальная встреча</option>
+							</select>
+						</div>
+						<div class="field">
+							<label for="Цель">Важные нюансы</label>
+							<select class="js-select multiple checkbox" name="state" multiple="multiple">
+								<option value="wi-fi">wi-fi</option>
+								<option value="бесплатно">бесплатно</option>
+								<option value="кофе и еда">кофе и еда</option>
+								<option value="наличие компьютера">наличие компьютера</option>
+								<option value="тишина">тишина</option>
+								<option value="круглосуточно">круглосуточно</option>
+								<option value="wi-fi2">wi-fi2</option>
+								<option value="бесплатно2">бесплатно2</option>
+								<option value="кофе и еда2">кофе и еда2</option>
+								<option value="наличие компьютера2">наличие компьютера2</option>
+								<option value="тишина2">тишина2</option>
+								<option value="круглосуточно2">круглосуточно2</option>
+							</select>
+						</div>
+						<div class="field">
+							<label for="Цель">Дополнительно</label>
+							<select class="js-select multiple" name="state" multiple="multiple">
+								<option value="вид из окна">вид из окна</option>
+							</select>
+						</div>
+					</div>
+					<div class="block_item service">
+						<div class="title">Стоимость услуг</div>
+						<div class="row1">
+							<div class="field">
+								<label for="">Услуга</label>
+								<select class="js-select" name="state">
+									<option value="Аренда">Аренда</option>
+									<option value="Аренда2">Аренда2</option>
+								</select>
+							</div>
+							<div class="field">
+								<label for="">Характеристика</label>
+								<select class="js-select" name="state">
+									<option value="за час">за час</option>
+									<option value="за час2">за час2</option>
+								</select>
+							</div>
+						</div>
+						<div class="row2">
+							<div>
+								<div class="field">
+									<label for="">Цена</label>
+									<input type="number" name="" id="" placeholder="500">
+								</div>
+								<div class="field">
+									<label for="">Цена со скидкой</label>
+									<input type="number" name="" id="" placeholder="500">
+								</div>
+							</div>
+							<div class="description">Указывайте стоимость услуг цифрой, без единицы измерения. Она
+								добавится автоматически.</div>
+						</div>
+						<div class="row3">
+							<span class="delete">Удалить услугу</span>
+						</div>
+						<div class="add_service">+ добавить услугу</div>
+						<div class="delete_services">Удалить все услуги</div>
+					</div>
+
+
+					<div class="button_block">
+						<button type="submit" class="save">Сохранить</button>
+						<button class="remove">Снять с публикации</button>
+					</div>
+				</form>
+				<div class="popup popup-delete block_item">
+					<div class="title">Удалить услугу?</div>
+					<div class="close"></div>
+					<div class="field">
+						<div class="text">Подтвердите действие или отмените его.</div>
+						<div class="button_block">
+							<div class="button remove">Да, удалить</div>
+							<div class="button">Нет, отменить</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="checkbox_modal"></div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="js/select2.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
