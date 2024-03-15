@@ -66,14 +66,11 @@ jQuery(document).ready(function () {
     });
   }
 
-  const $row1 = $('.service_item').clone();
-  // const $row2 = $('.row2').clone();
-  // const $row3 = $('.row3').clone();
+  const $service_item = $('.service_item').clone();
+
   $('.add_service').click(function (e) {
     $('.delete_services').css('display', 'block');
-    $('.add_service').before($row1.clone());
-    // $('.add_service').before($row2.clone());
-    // $('.add_service').before($row3.clone());
+    $('.add_service').before($service_item.clone());
   });
 
   $('.delete_services').click(function (e) {
