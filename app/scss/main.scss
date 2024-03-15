@@ -1093,6 +1093,16 @@ a {
 				bottom: 1px;
 				left: 0;
 			}
+
+			transition: $transition;
+			-webkit-transition: $transition;
+			-moz-transition: $transition;
+			-ms-transition: $transition;
+			-o-transition: $transition;
+
+			&:hover {
+				color: $hover-blue;
+			}
 		}
 
 		.second-link {
@@ -1113,6 +1123,15 @@ a {
 				line-height: 1.2;
 				color: $blue;
 				text-decoration: underline;
+				transition: $transition;
+				-webkit-transition: $transition;
+				-moz-transition: $transition;
+				-ms-transition: $transition;
+				-o-transition: $transition;
+
+				&:hover {
+					color: $hover-blue;
+				}
 			}
 		}
 
@@ -1410,6 +1429,15 @@ a {
 				.button {
 					padding: 12.5px 15.5px 13.5px 15.5px;
 					font-size: 18px;
+					transition: $transition;
+					-webkit-transition: $transition;
+					-moz-transition: $transition;
+					-ms-transition: $transition;
+					-o-transition: $transition;
+
+					&:hover {
+						background-color: $hover-blue;
+					}
 
 					@media (min-width: 860px) {
 						width: 157px;
@@ -1447,6 +1475,15 @@ a {
 			-moz-border-radius: 14px;
 			-ms-border-radius: 14px;
 			-o-border-radius: 14px;
+			transition: $transition;
+			-webkit-transition: $transition;
+			-moz-transition: $transition;
+			-ms-transition: $transition;
+			-o-transition: $transition;
+
+			&:hover {
+				background-color: $hover-blue;
+			}
 
 			&.remove {
 				background-color: #fff;
@@ -1484,12 +1521,31 @@ a {
 		color: #fff;
 		background-color: $blue;
 		border: none;
+		transition: $transition;
+		-webkit-transition: $transition;
+		-moz-transition: $transition;
+		-ms-transition: $transition;
+		-o-transition: $transition;
+
+		&:hover {
+			background-color: $hover-blue;
+		}
 	}
 
 	.remove {
 		color: $blue;
 		background-color: #fff;
 		border: 1px solid $blue;
+
+		transition: $transition;
+		-webkit-transition: $transition;
+		-moz-transition: $transition;
+		-ms-transition: $transition;
+		-o-transition: $transition;
+
+		&:hover {
+			background-color: $light-blue;
+		}
 	}
 }
 

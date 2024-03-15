@@ -959,6 +959,11 @@ a {
   color: #2e5fda;
   font-weight: 600;
   position: relative;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
 }
 .block_item .field .main-link::after {
   position: absolute;
@@ -968,6 +973,9 @@ a {
   background-color: #2e5fda;
   bottom: 1px;
   left: 0;
+}
+.block_item .field .main-link:hover {
+  color: #2d59c6;
 }
 .block_item .field .second-link {
   color: hsla(0, 0%, 16%, 0.6);
@@ -986,6 +994,14 @@ a {
   line-height: 1.2;
   color: #2e5fda;
   text-decoration: underline;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+}
+.block_item .field .edit a:hover {
+  color: #2d59c6;
 }
 .block_item .field .select2-container--default {
   z-index: 2;
@@ -1256,6 +1272,14 @@ a {
 .block_item.popup.popup-delete .button_block .button {
   padding: 12.5px 15.5px 13.5px 15.5px;
   font-size: 18px;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+}
+.block_item.popup.popup-delete .button_block .button:hover {
+  background-color: #2d59c6;
 }
 @media (min-width: 860px) {
   .block_item.popup.popup-delete .button_block .button {
@@ -1289,6 +1313,14 @@ a {
   -moz-border-radius: 14px;
   -ms-border-radius: 14px;
   -o-border-radius: 14px;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+}
+.block_item.popup .button:hover {
+  background-color: #2d59c6;
 }
 .block_item.popup .button.remove {
   background-color: #fff;
@@ -1323,11 +1355,27 @@ a {
   color: #fff;
   background-color: #2e5fda;
   border: none;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+}
+.button_block .save:hover {
+  background-color: #2d59c6;
 }
 .button_block .remove {
   color: #2e5fda;
   background-color: #fff;
   border: 1px solid #2e5fda;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+}
+.button_block .remove:hover {
+  background-color: rgba(46, 95, 218, 0.1019607843);
 }
 
 .js-select.checkbox + .select2.select2-container--above .select2-search {
