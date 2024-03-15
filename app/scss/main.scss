@@ -5,6 +5,8 @@ $light-color: hsla(0, 0%, 16%, 0.6);
 $blue: #2e5fda;
 $semi-light: rgba(46, 95, 218, 0.5);
 $light-blue: #2e5fda1a;
+$hover-blue: #2d59c6;
+$transition: all 0.3s ease-in;
 
 * {
 	box-sizing: border-box;
@@ -237,13 +239,17 @@ a {
 				position: relative;
 				border-top: 1px solid $light-blue;
 				width: 100%;
-				padding: 22px 25px;
 				overflow: hidden;
-				transition: border 0.3s ease-in;
-				-webkit-transition: border 0.3s ease-in;
-				-moz-transition: border 0.3s ease-in;
-				-ms-transition: border 0.3s ease-in;
-				-o-transition: border 0.3s ease-in;
+				transition: $transition;
+				-webkit-transition: $transition;
+				-moz-transition: $transition;
+				-ms-transition: $transition;
+				-o-transition: $transition;
+				cursor: pointer;
+
+				&:hover {
+					background-color: $light-blue;
+				}
 
 				&:not(.active) {
 					display: none;
@@ -256,7 +262,7 @@ a {
 				&.active {
 					order: -1;
 					background-color: $light-blue;
-					padding-left: 25px;
+					// padding-left: 25px;
 					border-bottom-left-radius: 16px;
 					border-bottom-right-radius: 16px;
 
@@ -340,8 +346,9 @@ a {
 				}
 
 				a {
-					padding-left: 34px;
-					font-weight: 500;
+					padding: 22px 25px;
+					padding-left: 58px;
+					font-weight: 450;
 					line-height: 1.2;
 					font-size: 20px;
 					position: relative;
@@ -353,7 +360,7 @@ a {
 						background-size: 24px;
 						width: 24px;
 						height: 24px;
-						left: 0;
+						left: 24px;
 					}
 
 					&.account {
@@ -365,6 +372,18 @@ a {
 					&.cards {
 						&::before {
 							background-image: url(../img/cards.svg);
+						}
+					}
+
+					&.balance {
+						&::before {
+							background-image: url(../img/balance.svg);
+						}
+					}
+
+					&.leads {
+						&::before {
+							background-image: url(../img/leads.svg);
 						}
 					}
 
@@ -852,7 +871,7 @@ a {
 	.title {
 		font-weight: 700;
 		font-size: 24px;
-		line-height: 1.9166;
+		line-height: 1.2;
 	}
 
 	.field {
@@ -871,6 +890,7 @@ a {
 		textarea {
 			outline: none;
 			font-family: "Golos Text", sans-serif;
+			font-size: 16px;
 			font-weight: 400;
 			line-height: 1.4;
 			color: $light-color;
@@ -1299,6 +1319,7 @@ a {
 		padding-left: 38px;
 		color: $light-color;
 		line-height: 1.2;
+		font-size: 18px;
 
 		&::before {
 			position: absolute;
@@ -1665,6 +1686,11 @@ a {
 			-moz-border-radius: 8px;
 			-ms-border-radius: 8px;
 			-o-border-radius: 8px;
+			transition: all 0.3s ease-in;
+			-webkit-transition: all 0.3s ease-in;
+			-moz-transition: all 0.3s ease-in;
+			-ms-transition: all 0.3s ease-in;
+			-o-transition: all 0.3s ease-in;
 
 			@media (min-width: 860px) {
 				padding: 12.5px 1.5em;
@@ -1672,6 +1698,10 @@ a {
 
 			@media (min-width: 906px) {
 				padding: 12.5px 32px;
+			}
+
+			&:hover {
+				background-color: $light-blue;
 			}
 
 			img {
@@ -1707,16 +1737,23 @@ a {
 		@media (min-width: 860px) {
 			flex-direction: row;
 			align-items: center;
+			gap: 24px;
 		}
+
 		label {
 			font-size: 18px;
 			font-weight: 500;
 			color: $main-color;
+			white-space: nowrap;
 		}
 
 		.input {
-			flex-shrink: 0;
+			flex: 1;
 			position: relative;
+
+			@media (min-width: 920px) {
+				flex: 179px 0;
+			}
 			input {
 				font-size: 16px;
 				font-weight: 500;
@@ -1744,6 +1781,7 @@ a {
 		}
 
 		.button {
+			flex: 1;
 			background: none;
 			border: none;
 			padding: 0;
@@ -1762,6 +1800,15 @@ a {
 				-moz-border-radius: 12px;
 				-ms-border-radius: 12px;
 				-o-border-radius: 12px;
+				transition: $transition;
+				-webkit-transition: $transition;
+				-moz-transition: $transition;
+				-ms-transition: $transition;
+				-o-transition: $transition;
+
+				&:hover {
+					background-color: $hover-blue;
+				}
 			}
 		}
 	}
@@ -1791,6 +1838,11 @@ a {
 			-moz-border-radius: 16px;
 			-ms-border-radius: 16px;
 			-o-border-radius: 16px;
+			transition: $transition;
+			-webkit-transition: $transition;
+			-moz-transition: $transition;
+			-ms-transition: $transition;
+			-o-transition: $transition;
 
 			&:hover {
 				background-color: $light-blue;
@@ -1868,6 +1920,16 @@ a {
 			background-color: $blue;
 			left: 0;
 			bottom: 1px;
+		}
+
+		transition: $transition;
+		-webkit-transition: $transition;
+		-moz-transition: $transition;
+		-ms-transition: $transition;
+		-o-transition: $transition;
+
+		&:hover {
+			color: $hover-blue;
 		}
 	}
 
@@ -1962,19 +2024,24 @@ a {
 			font-weight: 500;
 			color: $light-color;
 			line-height: 1.2;
+			max-width: 200px;
 		}
 	}
 }
 
 .block_item .price_one_lead {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 24px;
 	color: $main-color;
 	font-size: 18px;
 	font-weight: 500;
-	line-height: 33px;
+	line-height: 1.2;
 
 	span {
 		font-weight: 700;
-		margin-left: 24px;
+		line-height: 13px;
 	}
 }
 

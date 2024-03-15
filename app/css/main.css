@@ -221,13 +221,16 @@ a {
   position: relative;
   border-top: 1px solid rgba(46, 95, 218, 0.1019607843);
   width: 100%;
-  padding: 22px 25px;
   overflow: hidden;
-  transition: border 0.3s ease-in;
-  -webkit-transition: border 0.3s ease-in;
-  -moz-transition: border 0.3s ease-in;
-  -ms-transition: border 0.3s ease-in;
-  -o-transition: border 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+.sitebar .menu ul li:hover {
+  background-color: rgba(46, 95, 218, 0.1019607843);
 }
 .sitebar .menu ul li:not(.active) {
   display: none;
@@ -240,7 +243,6 @@ a {
 .sitebar .menu ul li.active {
   order: -1;
   background-color: rgba(46, 95, 218, 0.1019607843);
-  padding-left: 25px;
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
 }
@@ -314,8 +316,9 @@ a {
   -o-transform: translateY(-50%);
 }
 .sitebar .menu ul li a {
-  padding-left: 34px;
-  font-weight: 500;
+  padding: 22px 25px;
+  padding-left: 58px;
+  font-weight: 450;
   line-height: 1.2;
   font-size: 20px;
   position: relative;
@@ -327,13 +330,19 @@ a {
   background-size: 24px;
   width: 24px;
   height: 24px;
-  left: 0;
+  left: 24px;
 }
 .sitebar .menu ul li a.account::before {
   background-image: url(../img/account.svg);
 }
 .sitebar .menu ul li a.cards::before {
   background-image: url(../img/cards.svg);
+}
+.sitebar .menu ul li a.balance::before {
+  background-image: url(../img/balance.svg);
+}
+.sitebar .menu ul li a.leads::before {
+  background-image: url(../img/leads.svg);
 }
 .sitebar .menu ul li a.support::before {
   background-image: url(../img/support.svg);
@@ -755,7 +764,7 @@ a {
 .block_item .title {
   font-weight: 700;
   font-size: 24px;
-  line-height: 1.9166;
+  line-height: 1.2;
 }
 .block_item .field {
   display: flex;
@@ -772,6 +781,7 @@ a {
 .block_item .field textarea {
   outline: none;
   font-family: "Golos Text", sans-serif;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
   color: hsla(0, 0%, 16%, 0.6);
@@ -1159,6 +1169,7 @@ a {
   padding-left: 38px;
   color: hsla(0, 0%, 16%, 0.6);
   line-height: 1.2;
+  font-size: 18px;
 }
 .block_item .description::before {
   position: absolute;
@@ -1480,6 +1491,11 @@ a {
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
 }
 @media (min-width: 860px) {
   .block_item.supports .button_block .button a {
@@ -1490,6 +1506,9 @@ a {
   .block_item.supports .button_block .button a {
     padding: 12.5px 32px;
   }
+}
+.block_item.supports .button_block .button a:hover {
+  background-color: rgba(46, 95, 218, 0.1019607843);
 }
 .block_item.supports .button_block .button a img {
   width: 24px;
@@ -1517,16 +1536,23 @@ a {
   .block_item.add_balance .field {
     flex-direction: row;
     align-items: center;
+    gap: 24px;
   }
 }
 .block_item.add_balance .field label {
   font-size: 18px;
   font-weight: 500;
   color: #2a2a2a;
+  white-space: nowrap;
 }
 .block_item.add_balance .field .input {
-  flex-shrink: 0;
+  flex: 1;
   position: relative;
+}
+@media (min-width: 920px) {
+  .block_item.add_balance .field .input {
+    flex: 179px 0;
+  }
 }
 .block_item.add_balance .field .input input {
   font-size: 16px;
@@ -1550,6 +1576,7 @@ a {
   -o-transform: translateY(-50%);
 }
 .block_item.add_balance .field .button {
+  flex: 1;
   background: none;
   border: none;
   padding: 0;
@@ -1568,6 +1595,14 @@ a {
   -moz-border-radius: 12px;
   -ms-border-radius: 12px;
   -o-border-radius: 12px;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+}
+.block_item.add_balance .field .button a:hover {
+  background-color: #2d59c6;
 }
 
 .actions {
@@ -1598,6 +1633,11 @@ a {
   -moz-border-radius: 16px;
   -ms-border-radius: 16px;
   -o-border-radius: 16px;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
 }
 .actions .block_item.autopay > a:hover,
 .actions .block_item.out_money > a:hover {
@@ -1660,6 +1700,11 @@ a {
   color: #2e5fda;
   font-size: 16px;
   font-weight: 500;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
 }
 .block_item .link::after {
   position: absolute;
@@ -1669,6 +1714,9 @@ a {
   background-color: #2e5fda;
   left: 0;
   bottom: 1px;
+}
+.block_item .link:hover {
+  color: #2d59c6;
 }
 .block_item .transactions {
   display: flex;
@@ -1747,17 +1795,22 @@ a {
   font-weight: 500;
   color: hsla(0, 0%, 16%, 0.6);
   line-height: 1.2;
+  max-width: 200px;
 }
 
 .block_item .price_one_lead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
   color: #2a2a2a;
   font-size: 18px;
   font-weight: 500;
-  line-height: 33px;
+  line-height: 1.2;
 }
 .block_item .price_one_lead span {
   font-weight: 700;
-  margin-left: 24px;
+  line-height: 13px;
 }
 
 form.block_item .button {
