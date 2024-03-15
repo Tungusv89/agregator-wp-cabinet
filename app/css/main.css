@@ -700,25 +700,35 @@ a {
     padding: 30px;
   }
 }
-.block_item.service .row1,
-.block_item.service .row2 {
+.block_item.service .service_item {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.block_item.service .service_item .row1,
+.block_item.service .service_item .row2 {
   display: flex;
   flex-direction: column;
   gap: 18px;
 }
-.block_item.service .row2 > div {
+.block_item.service .service_item .row2 > div {
   display: flex;
   flex-direction: column;
   gap: 18px;
 }
-.block_item.service .row3 .delete {
+.block_item.service .service_item .row3:last-child {
+  border: 0;
+  width: fit-content;
+  padding: 0;
+}
+.block_item.service .service_item .row3 .delete {
   position: relative;
   font-weight: 500;
   line-height: 1.2;
   color: #2e5fda;
   cursor: pointer;
 }
-.block_item.service .row3 .delete::before {
+.block_item.service .service_item .row3 .delete::before {
   position: absolute;
   content: "";
   width: 100%;
@@ -727,37 +737,42 @@ a {
   left: 0;
   background-color: #2e5fda;
 }
+.block_item.service .service_item + .service_item {
+  border-top: 1px solid rgba(46, 95, 218, 0.1019607843);
+  width: 100%;
+  padding-top: 24px;
+}
 @media (min-width: 860px) {
-  .block_item.service {
+  .block_item.service .service_item {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .block_item.service .title {
+  .block_item.service .service_item .title {
     width: 100%;
   }
-  .block_item.service .row1,
-  .block_item.service .row2 {
+  .block_item.service .service_item .row1,
+  .block_item.service .service_item .row2 {
     flex-direction: row;
   }
-  .block_item.service .row1 {
+  .block_item.service .service_item .row1 {
     width: 100%;
   }
-  .block_item.service .row1 .field {
+  .block_item.service .service_item .row1 .field {
     width: 100%;
   }
-  .block_item.service .row1 .field .select2 {
+  .block_item.service .service_item .row1 .field .select2 {
     width: 100% !important;
   }
-  .block_item.service .row2 {
+  .block_item.service .service_item .row2 {
     justify-content: space-between;
     align-items: flex-end;
   }
-  .block_item.service .row2 > div {
+  .block_item.service .service_item .row2 > div {
     flex-direction: row;
     gap: 12px;
     flex: 1;
   }
-  .block_item.service .row2 .field label {
+  .block_item.service .service_item .row2 .field label {
     white-space: nowrap;
   }
 }
